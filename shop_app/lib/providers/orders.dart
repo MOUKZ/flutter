@@ -37,11 +37,12 @@ class Orders with ChangeNotifier {
     if (extractedData == null) {
       return;
     }
+    print(extractedData);
     extractedData.forEach((orderId, orderData) {
       loadedOrders.add(
         OrderItem(
           id: orderId,
-          amount: orderData['amount'],
+          amount: double.parse(orderData['amount'].toString()),
           dateTime: DateTime.parse(orderData['dateTime']),
           products: (orderData['products'] as List<dynamic>)
               .map(
@@ -49,7 +50,7 @@ class Orders with ChangeNotifier {
                   id: e['id'],
                   title: e['title'],
                   quantity: e['quantity'],
-                  price: e['price'],
+                  price: double.parse(e['price'].toString()),
                 ),
               )
               .toList(),
