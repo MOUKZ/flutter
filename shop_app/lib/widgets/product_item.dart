@@ -30,12 +30,22 @@ class ProductItem extends StatelessWidget {
               arguments: product.id,
             );
           },
-          child: CachedNetworkImage(
+          child:
+              /* CachedNetworkImage(
+            placeholder: (ctx , s)=>ImageProvider(),
             fit: BoxFit.cover,
             imageUrl: product.imageUrl,
             progressIndicatorBuilder: (context, url, downloadProgress) =>
                 LinearProgressIndicator(value: downloadProgress.progress),
             errorWidget: (context, url, error) => Icon(Icons.error),
+          ),*/
+              Hero(
+            tag: product.id,
+            child: FadeInImage(
+              placeholder: AssetImage('assets/images/product-placeholder.png'),
+              image: NetworkImage(product.imageUrl),
+              fit: BoxFit.cover,
+            ),
           ),
         ),
         footer: GridTileBar(
@@ -64,8 +74,11 @@ class ProductItem extends StatelessWidget {
             ),
             onPressed: () {
               cart.addItem(product.id, product.price, product.title);
-              Scaffold.of(context).hideCurrentSnackBar();
-              Scaffold.of(context).showSnackBar(
+              ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
+              //Scaffold.of(context)..hideCurrentSnackBar();
+              // Scaffold.of(context).showSnackBar(
+              ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text(
                     'Added item to cart!',
