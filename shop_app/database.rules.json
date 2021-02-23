@@ -1,0 +1,9 @@
+{
+  "rules": {
+    ".read": "auth != null",  // 2020-12-25
+    ".write": "auth != null",  // 2020-12-25
+    "products":{
+        ".indexOn" : ["creatorId"]
+      }
+  }
+}

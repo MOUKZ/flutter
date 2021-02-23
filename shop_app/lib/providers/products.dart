@@ -26,7 +26,7 @@ class Products with ChangeNotifier {
     final filterString =
         filterByUser ? 'orderBy="creatorId"&equalTo="$userId"' : '';
     var url =
-        'https://shop-app-88402.firebaseio.com/products.json?auth=$authToken&$filterString';
+        'https://myshop-a165c-default-rtdb.firebaseio.com/products.json?auth=$authToken&$filterString';
     try {
       final response = await http.get(url);
       print(jsonDecode(response.body));
@@ -36,7 +36,7 @@ class Products with ChangeNotifier {
         return;
       }
       url =
-          'https://shop-app-88402.firebaseio.com/userFavorites/$userId.json?auth=$authToken';
+          'https://myshop-a165c-default-rtdb.firebaseio.com/userFavorites/$userId.json?auth=$authToken';
       final favoriteResponse = await http.get(url);
       final favoriteData = json.decode(favoriteResponse.body);
       extractedData.forEach((prodId, prodData) {
@@ -60,7 +60,7 @@ class Products with ChangeNotifier {
 
   Future<void> addProduct(Product product) async {
     final url =
-        'https://shop-app-88402.firebaseio.com/products.json?auth=$authToken';
+        'https://myshop-a165c-default-rtdb.firebaseio.com/products.json?auth=$authToken';
     try {
       final response = await http.post(url,
           body: json.encode({
@@ -91,7 +91,7 @@ class Products with ChangeNotifier {
     final prodIndex = _items.indexWhere((prod) => prod.id == id);
     if (prodIndex >= 0) {
       final url =
-          'https://shop-app-88402.firebaseio.com/products/$id.json?auth=$authToken';
+          'https://myshop-a165c-default-rtdb.firebaseio.com/products/$id.json?auth=$authToken';
       final response = await http.patch(url,
           body: json.encode({
             'title': newProduct.title,
@@ -109,7 +109,7 @@ class Products with ChangeNotifier {
 
   Future<void> deleteProduct(String id) async {
     final url =
-        'https://shop-app-88402.firebaseio.com/products/$id.json?auth=$authToken';
+        'https://myshop-a165c-default-rtdb.firebaseio.com/products/$id.json?auth=$authToken';
     final existingProductIndex = _items.indexWhere((prod) => prod.id == id);
     var existingProduct = _items[existingProductIndex];
     try {
