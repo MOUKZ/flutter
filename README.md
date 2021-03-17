@@ -26,7 +26,16 @@ Repository For Flutter Projects </br>
       <li>User-based user authentication</li>
       <li>Each user can upload and edit their own products </li>
       <li> Users can order , edit cart and orders </li>
-    </ul></br>
+    </ul>
+    Modern music application with all the basic features 
+    Technologies :
+    <ul>
+    <li> Provider state management  </li>
+    <li> cached network image for minimizing data traffic </li>
+    <li> shared preferences</li>
+    <li> http requests to firebase backend api</li>
+       </ul>
+    </br>
    <img src="ScreenShots/shop/shop_sign_in.jpg" width="200">  
    <img src="ScreenShots/shop/shop_overView.jpg" width="200">
    <img src="ScreenShots/shop/shop_edit_product.jpg" width="200">
@@ -36,7 +45,7 @@ Repository For Flutter Projects </br>
   
   
   </li>
-  <li> </li>
+  
   
 </ul>
 
