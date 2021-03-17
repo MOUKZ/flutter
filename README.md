@@ -26,8 +26,7 @@ Repository For Flutter Projects </br>
       <li>User-based user authentication</li>
       <li>Each user can upload and edit their own products </li>
       <li> Users can order , edit cart and orders </li>
-    </ul>
-    Modern music application with all the basic features 
+    </ul></br>
     Technologies :
     <ul>
     <li> Provider state management  </li>
