@@ -18,8 +18,7 @@ Repository For Flutter Projects </br>
   
   </li>
   <li><h1>Tick Tack Toe</h1>
-  <p>Fully functional Tick Tack Toe game made with flutter , all in-game logic made with a strong code 
-, and the graphics are made to suit modern game applications.</p>
+  <p>Fully functional Tick Tack Toe game made with flutter , all in-game logic made with strong code, and the graphics are made to suit modern applications.</p>
   </li>
   <li> <h1>Shop App </h1></li>
   <li> </li>
