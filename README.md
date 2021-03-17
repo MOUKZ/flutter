@@ -1,9 +1,11 @@
 # flutter
 Repository For Flutter Projects </br>
 <ul>
-<li></li>
+<li> <img src="ScreenShots/music/player.jpg" width="48"> </li>
+  <li> <img src="ScreenShots/music/player.jpg" width="48"> </li>
+  <li> <img src="ScreenShots/music/player.jpg" width="48"> </li>
 </ul>
-<img src="ScreenShots/music/player.jpg" width="48">
+
 
 
 
