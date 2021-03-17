@@ -1,7 +1,7 @@
 # flutter
 Repository For Flutter Projects </br>
 <ul>
-<li> # Music Player Application 
+<li> <h1> Music Player Application</h1> 
   <p> 
   Modern music application with all the basic features 
   Technologies :
