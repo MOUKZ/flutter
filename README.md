@@ -7,7 +7,7 @@ Repository For Flutter Projects </br>
   Technologies :
     <ul>
 <li> Flutter audio query : to list all local audio files </li>
-<li> Block : for state management</li>
+<li> provider: for state management advancing song slider , current song duration and max duration </li>
 <li> Get_it : for dependency injection</li>
 <li> Sleek circular slider : for modern graphics</li>
       </ul></br>
@@ -17,8 +17,10 @@ Repository For Flutter Projects </br>
   </p>
   
   </li>
-  <li> # shop_app </li>
+  <li><h1>Tick Tack Toe</h1> </li>
+  <li> <h1>Shop App </h1></li>
   <li> </li>
+  
 </ul>
 
 
