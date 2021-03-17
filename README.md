@@ -11,9 +11,9 @@ Repository For Flutter Projects </br>
 <li> Get_it : for dependency injection</li>
 <li> Sleek circular slider : for modern graphics</li>
       </ul></br>
-   <img src="ScreenShots/music/player.jpg" width="130">  
-   <img src="ScreenShots/music/activeSongList.jpg" width="130">
-   <img src="ScreenShots/music/albumPlayList.jpg" width="130">
+   <img src="ScreenShots/music/player.jpg" width="200">  
+   <img src="ScreenShots/music/activeSongList.jpg" width="200">
+   <img src="ScreenShots/music/albumPlayList.jpg" width="200">
   </p>
   
   </li>
