@@ -10,7 +10,7 @@ Repository For Flutter Projects </br>
 <li> Block : for state management</li>
 <li> Get_it : for dependency injection</li>
 <li> Sleek circular slider : for modern graphics</li>
-      </ul>
+      </ul></br>
    <img src="ScreenShots/music/player.jpg" width="48">  <img src="ScreenShots/music/player.jpg" width="48">
    <img src="ScreenShots/music/player.jpg" width="48">
   </p>
