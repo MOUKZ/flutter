@@ -30,6 +30,7 @@ class _AlbumPlaylistState extends State<AlbumPlaylist> {
   void tryget(BuildContext ctx) async {
     final songProvider = Provider.of<SongProvider>(ctx, listen: false);
     widget.albumSongs = await songProvider.getAlbumSongs(widget.album.id);
+
     setState(() {
       widget.albumSongs = widget.albumSongs;
     });
@@ -42,8 +43,17 @@ class _AlbumPlaylistState extends State<AlbumPlaylist> {
     super.dispose();
   }
 
+  var stot;
   @override
   Widget build(BuildContext context) {
+    Duration tot = Duration(milliseconds: 0);
+    widget.albumSongs.forEach((e) {
+      tot += Duration(milliseconds: double.parse(e.duration).round());
+    });
+    stot = [tot.inMinutes, tot.inSeconds]
+        .map((e) => e.remainder(60).toString().padLeft(2, '0'))
+        .join(':');
+
     final songProvider = Provider.of<SongProvider>(context, listen: false);
     MediaQueryData mediaQueryData = MediaQuery.of(context);
     double widthScreen = mediaQueryData.size.width;
@@ -123,7 +133,7 @@ class _AlbumPlaylistState extends State<AlbumPlaylist> {
                 padding: EdgeInsets.zero,
                 itemCount: songs.length,
                 itemBuilder: (ctx, i) => ListTile(
-                  title: Text(widget.album.title),
+                  title: Text("${i + 1}- ${songs[i].title}"),
                   trailing: Consumer<SongProvider>(
                     builder: (_, sp, child) => i == sp.currentIndex
                         ? IconButton(
@@ -267,7 +277,7 @@ class _AlbumPlaylistState extends State<AlbumPlaylist> {
               ),
               SizedBox(height: 4.0),
               Text(
-                '22 songs * 1 hr 30 min',
+                '${widget.albumSongs.length} songs * $stot',
                 style: Theme.of(ctx).textTheme.subtitle2.merge(
                       TextStyle(color: Colors.grey),
                     ),
