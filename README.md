@@ -1,4 +1,4 @@
-# flutter
+# Flutter
 Repository For Flutter Projects </br>
 <ul>
 <li> <h1> Music Player Application</h1> 
@@ -20,7 +20,17 @@ Repository For Flutter Projects </br>
   <li><h1>Tick Tack Toe</h1>
   <p>Fully functional Tick Tack Toe game made with flutter , all in-game logic made with strong code, and the graphics are made to suit modern applications.</p>
   </li>
-  <li> <h1>Shop App </h1></li>
+  <li> <h1>Shop App </h1>
+  <p>Fully functional multy-user shop app
+    <ul>
+      <li>User-based user authentication</li>
+      <li>Each user can upload and edit their own products </li>
+      <li> Users can order , edit cart and orders </li>
+    </ul>
+  </p>
+  
+  
+  </li>
   <li> </li>
   
 </ul>
