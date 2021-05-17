@@ -1,16 +1,14 @@
-# final_music
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h1> Music Player Application</h1> 
+  <p> 
+  Modern music application with all the basic features 
+  Technologies :
+    <ul>
+<li> Flutter audio query : to list all local audio files </li>
+<li> provider: for state management advancing song slider , current song duration and max duration </li>
+<li> Get_it : for dependency injection</li>
+<li> Sleek circular slider : for modern graphics</li>
+      </ul></br>
+   <img src="ScreenShots/music/player.jpg" width="200">  
+   <img src="ScreenShots/music/activeSongList.jpg" width="200">
+   <img src="ScreenShots/music/albumPlayList.jpg" width="200">
+  </p>
