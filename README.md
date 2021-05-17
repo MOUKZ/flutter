@@ -16,15 +16,15 @@ Repository For Flutter Projects </br>
       </ul></br>
       
       
-    </ul>
+    
    
  
 
   
 
-   <img src="ScreenShots/music/player.jpg" width="200">  
-   <img src="ScreenShots/music/activeSongList.jpg" width="200">
-   <img src="ScreenShots/music/albumPlayList.jpg" width="200">
+   <img src="../ScreenShots/music/player.jpg" width="200">  
+   <img src="../ScreenShots/music/activeSongList.jpg" width="200">
+   <img src="../ScreenShots/music/albumPlayList.jpg" width="200">
   </p>
   
   </li>
