@@ -3,7 +3,9 @@ Repository For Flutter Projects </br>
 <ul>
 <li> <h1> Music Player Application</h1> 
   <p> 
-  Modern music application with all the basic features 
+   Fully functional music player application using MVVM Architecture
+Query all device audio(music) files 
+Order music files based on Song/Album<br> 
   Technologies :
     <ul>
 <li> Flutter audio query : to list all local audio files </li>
